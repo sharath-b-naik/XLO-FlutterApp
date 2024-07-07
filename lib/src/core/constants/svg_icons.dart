@@ -1,0 +1,34 @@
+abstract class SvgIcons {
+  static const String arrowBack = "assets/svg/arrow_back.svg";
+  static const String bookmark = "assets/svg/bookmark.svg";
+  static const String bookmarkFilled = "assets/svg/bookmark_filled.svg";
+  static const String buyNow = "assets/svg/buy_now.svg";
+  static const String calendar = "assets/svg/calendar.svg";
+  static const String challenge = "assets/svg/challenge.svg";
+  static const String chat = "assets/svg/chat.svg";
+  static const String contact = "assets/svg/contact.svg";
+  static const String delete = "assets/svg/delete.svg";
+  static const String document = "assets/svg/document.svg";
+  static const String edit = "assets/svg/edit.svg";
+  static const String email = "assets/svg/email.svg";
+  static const String google = "assets/svg/google.svg";
+  static const String home = "assets/svg/home.svg";
+  static const String info = "assets/svg/info.svg";
+  static const String language = "assets/svg/language.svg";
+  static const String liquidCheeseBackground = "assets/svg/liquid-cheese.svg";
+  static const String lock = "assets/svg/lock.svg";
+  static const String logout = "assets/svg/logout.svg";
+  static const String notification = "assets/svg/notification.svg";
+  static const String person = "assets/svg/person.svg";
+  static const String privacy = "assets/svg/privacy.svg";
+  static const String recipt = "assets/svg/recipt.svg";
+  static const String refer = "assets/svg/refer.svg";
+  static const String search = "assets/svg/search.svg";
+  static const String support = "assets/svg/support.svg";
+  static const String terms = "assets/svg/terms.svg";
+  static const String userProduct = "assets/svg/user_product.svg";
+  static const String warning = "assets/svg/warning.svg";
+  static const String github = "assets/svg/github.svg";
+  static const String linkedin = "assets/svg/linkedin.svg";
+  static const String gmail = "assets/svg/gmail.svg";
+}
