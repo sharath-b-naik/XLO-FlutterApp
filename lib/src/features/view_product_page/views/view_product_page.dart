@@ -71,7 +71,8 @@ class _ViewProductPageState extends ConsumerState<ViewProductPage> {
                         fit: BoxFit.cover,
                         fadeInDuration: Duration.zero,
                         fadeOutDuration: Duration.zero,
-                        imageUrl: state.selectedImage ?? product.images.first.url ?? '',
+                        imageUrl:
+                            state.selectedImage ?? (product.images.isEmpty ? "" : product.images.first.url ?? ''),
                         errorWidget: (context, url, error) => const SizedBox(),
                         placeholder: (context, url) => const LoadingIndicator(),
                       ),

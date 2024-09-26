@@ -196,8 +196,15 @@ class MyAdCard extends ConsumerWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(6),
                 child: CachedNetworkImage(
-                  imageUrl: product.images.first.url ?? '',
+                  imageUrl: product.images.isEmpty ? "" : product.images.first.url ?? '',
                   fit: BoxFit.cover,
+                  errorWidget: (context, url, error) {
+                    return const Icon(
+                      Icons.image,
+                      size: 44,
+                      color: KColors.disabled,
+                    );
+                  },
                 ),
               ),
             ),

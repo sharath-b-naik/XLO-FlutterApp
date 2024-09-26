@@ -391,7 +391,6 @@ class AddProductPage extends ConsumerWidget {
                                     },
                                     maxLines: 5,
                                     minLines: 1,
-                                    keyboardType: TextInputType.number,
                                     style: const TextStyle(fontSize: 14),
                                     decoration: InputDecoration(
                                       hintText: context.tr(AppLocalizations.type),
@@ -418,7 +417,6 @@ class AddProductPage extends ConsumerWidget {
                                     },
                                     maxLines: 5,
                                     minLines: 1,
-                                    keyboardType: TextInputType.number,
                                     style: const TextStyle(fontSize: 14),
                                     decoration: InputDecoration(
                                       hintText: context.tr(AppLocalizations.value),
