@@ -44,12 +44,12 @@ jobs:
       - name: Retrieve Release Version
         id: versionstep
         run: |
-          VERSION=$(more pubspec.yaml | grep version: | cut -d ' ' -f2)
-          echo "VERSION=$VERSION" >> $GITHUB_ENV  # Set version to environment variable
+          VERSION=$(grep 'version:' pubspec.yaml | cut -d ' ' -f2)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Push to releases
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ steps.versionstep.outputs.VERSION }}
+          tag: ${{ steps.versionstep.outputs.version }}
           token: ${{ secrets.TOKEN }}
           artifacts: "build/app/outputs/apk/release/app-release.apk"
