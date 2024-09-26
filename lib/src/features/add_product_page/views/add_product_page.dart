@@ -11,6 +11,7 @@ import '../../../core/constants/categories.dart';
 import '../../../core/constants/kcolors.dart';
 import '../../../core/shared/shared.dart';
 import '../../../core/translations/translations.dart';
+import '../../../utils/string_extension.dart';
 import '../../../widgets/app_text.dart';
 import '../../../widgets/back_button.dart';
 import '../../../widgets/button.dart';
@@ -235,7 +236,7 @@ class AddProductPage extends ConsumerWidget {
                   },
                   validator: (value) => value == null ? context.tr(AppLocalizations.required) : null,
                   hinttext: context.tr(AppLocalizations.selectCategory),
-                  items: categories.map((item) => item['category'].toString()).toList(),
+                  items: categories.map((item) => item['category'].toString().toTitleCase()).toList(),
                 ),
                 const SizedBox(height: 30),
                 AppText(context.tr(AppLocalizations.description)),

@@ -80,4 +80,11 @@ extension StringExtension on String {
       return null;
     }
   }
+
+  String toTitleCase() {
+    return split('_').map((word) {
+      if (word.isEmpty) return word;
+      return word[0].toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
+  }
 }
